@@ -17,6 +17,9 @@ make sure you have the required packages:
 and important files:
 -Procfile, in there:   web: gunicorn nameofyourproject.wsgi:application
 
+then:                                       
+run > heroku addons:create heroku-postgresql:hobby-dev (if you choose to use a free database)                                        
+
 
 # second stage
 in settings.py (special for dj_database_url and django-heroku):
@@ -38,7 +41,9 @@ django_heroku.settings(locals())
 
 
 # third stage
-
+# some debuging hints:
+  -remove pkg-resource in requirements.txt and you can uninstall it from the project
+  -                                     
 debugging is an unavoidable process...hahah!
 nothing easy boi
 
