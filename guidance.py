@@ -8,11 +8,11 @@
 connect the project with git and github (have the master access).that is after push the project 
 to the repo then push the repo to heroku ie > git push heroku master.
 make sure you have the required packages:
--gunicorn
--whitenoise(if you'll choose to)
--psycopg2
--dj_database_url
--django-heroku (very crucial)
+-gunicorn > ( pip install gunicorn)
+-whitenoise> (pip install whitenoise)  (if you'll choose to)
+-psycopg2 > (pip install psycopg2-binary)
+-dj_database_url > (pip install dj-database-url)
+-django-heroku > (pip install django-heroku)  (very crucial)
  
 and important files:
 -Procfile, in there:   web: gunicorn nameofyourproject.wsgi:application
